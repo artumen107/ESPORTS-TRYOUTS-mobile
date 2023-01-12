@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/AntiqueWhite">
+
+    <LinearLayout
+        android:id="@+id/mainLL"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@id/fragmentContainerView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mainActivityAvatarImg"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/account_avatar"
+            android:contentDescription="Avatar"
+            android:layout_marginStart="-5dp"
+            android:layout_marginEnd="15dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearance="@style/CircleImageView"
+
+
+
+        />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            >
+
+            <TextView
+                android:id="@+id/idTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mendi"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_gravity="start"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_500"
+                />
+        </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="end">
+
+          <ImageView
+              android:id="@+id/settingsBtn"
+              android:layout_width="48dp"
+              android:layout_height="48dp"
+              android:layout_gravity="center"
+              android:layout_marginStart="0dp"
+              android:padding="8dp"
+              android:src="@drawable/settings_icon" />
+          <ImageView
+              android:id="@+id/logoutBtn"
+              android:layout_width="48dp"
+              android:layout_height="48dp"
+              android:padding="8dp"
+              android:src="@drawable/logout_icon"
+              android:layout_marginEnd="20dp"
+              android:layout_gravity="center"/>
+
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="111dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainLL"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

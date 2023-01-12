@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "857795488577",
+    "firebase_url": "https://esportstryouts-175f8-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "esportstryouts-175f8",
+    "storage_bucket": "esportstryouts-175f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857795488577:android:b3b2e9194980bc228a0fc0",
+        "android_client_info": {
+          "package_name": "com.example.esportstryouts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857795488577-acmcfsrc08c0qsdh0kgf04r2cpq2e71f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.esportstryouts",
+            "certificate_hash": "86c23629d2511dd87bd0721172ab247877c853e2"
+          }
+        },
+        {
+          "client_id": "857795488577-jfgg0huu5dh8ft6jlcv8klcktvhvkrk1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABVJA537Ms2Uqdj2yj0T5oC6Qre15PwtU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857795488577-jfgg0huu5dh8ft6jlcv8klcktvhvkrk1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

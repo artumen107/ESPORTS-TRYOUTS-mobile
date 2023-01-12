@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">esportstryouts</string>
+    <string name="no_account">No account? <b>SignUP</b></string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="signup">SignUp</string>
+    <string name="LOGOUT">LogOut</string>
+    <string name="logged_in_user">Logged in user:</string>
+    <string name="filmy">FILMY</string>
+    <string name="gry">GRY</string>
+    <string name="nickname"><b>Nickname</b></string>
+    <string name="emailTv"><b>Email</b></string>
+    <string name="title_activity_game">GameActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_switch_cost">SwitchCostActivity</string>
+    <string name="title_activity_reaction_time2">ReactionTimeActivity2</string>
+    <string name="stopmsg">STOP</string>
+    <string name="startmsg">START</string>
+    <string name="custom_name">Custom Name</string>
+    <string name="reaction_time_help">
+In many first-person shooter games, reaction speed is the primary factor in determining player fitness. In the "Reaction Time" task, it is checked how quickly the user can see the stimulus on the screen and react to it. The values that describe the final result are the average and the best response time in milliseconds.
+    </string>
+    <string name="reaction_time_help2">
+        After clicking on the START button, the first round begins. The mechanism, at a random time in the range of 1500ms - 5000ms, will replace the green square with the red one. From this moment, the user\'s reaction time for the given round will start counting. The contestant touches the central area of the screen as quickly as possible when he sees a red figure.
+        Then the reaction time is saved and the next round begins.
+        There are 10 such rounds. The user may not complete the game successfully. This happens when the player touches the screen displaying a green square. The game stops and needs to be restarted.
+
+    </string>
+
+    <string name="delay_ability_help">
+This task tests your ability to refrain from a reaction that you have already started to perform. The ability to refrain from reacting is an important skill in video games because it is a measure of accuracy - that is, the ability to make a move as quickly as possible, but at the same time precisely.
+        This ability allows the game to effectively distinguish between elements that should be reacted to and those that should be ignored at a given moment.
+
+    </string>
+
+    <string name="delay_ability_help2">
+After clicking on the START button, the first round begins. The mechanism randomizes a value in the range of 1000ms-2000ms and during this time it starts displaying colored squares (orange or purple), which are commonly called "traps". Their number is also random, but within the range of 1-5 (at least one colored square).
+        After each "trap", at a random time in the range of 1200ms-2500ms, another square is displayed. The user has to touch the screen when the red square is displayed. This will only happen after all the "pitfalls".
+        The game consists of 5 rounds this time. The game may fail when the user touches a screen that does not display a square other than red.
+
+    </string>
+
+    <string name="switch_cost_help">
+The exercise measures a trait called mental flexibility, which is the ability to switch between tasks without compromising performance. By comparing the results from "Reaction Time" to those obtained in the "Switch Cost" task, the user can see how much time it takes to react with several distractions that distort the logic of what he sees.
+    </string>
+
+    <string name="switch_cost_help2">
+After clicking the START button, the first round begins and all the figures disappear from the screen. The system randomizes a value in the range of 1500ms - 5000ms and at this time displays a new layout. A square or rectangle appears in the center, composed of smaller quadrangles (squares or rectangles). Below, on the sides of the screen, you can see small figures that turn into buttons for answering. Their placement is also random. The user, after the arrangement of figures appears, must decide as soon as possible whether the pattern in the central point is a square or a rectangle and quickly find the answer on the screen. There are 19 patterns in total. Multiplying this by 2 random positions of a square and a rectangle (if there is a square on the left, a rectangle on the right, and vice versa), used as answer buttons, there are 38 different combinations. It is imperative that there are as many of them as possible to effectively distract the user. The game consists of 10 rounds. Ends before time if contestant answers wrong.
+
+        After successful completion of the competition, the results are sent to the database and updated in the "Results" section.
+    </string>
+</resources>

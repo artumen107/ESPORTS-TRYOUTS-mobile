@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ResultsFragment">
+
+    <LinearLayout
+        android:id="@+id/resultsFilterLL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/resultsListLL"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Sort by: "
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginEnd="15dp"/>
+        <Spinner
+            android:id="@+id/resultsFilter"
+            android:minWidth="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:entries="@array/spinnerValues"
+            android:background="@drawable/spinner_border"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resultsListLL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/resultsFilterLL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/resultsBackBtn"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+    >
+        <ProgressBar
+            android:id="@+id/resultsProgressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/progress_drawable_vertical" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resultsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_marginLeft="15dp">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/resultsBackBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="BACK"
+        android:minHeight="48dp"
+        android:src="@drawable/arrow_back_icon"
+        app:layout_constraintTop_toBottomOf= "@id/resultsListLL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/transparent">
+
+    </ImageButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

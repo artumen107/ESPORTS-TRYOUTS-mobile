@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="SwitchCostActivity">
+
+
+    <ImageView
+        android:id="@+id/switchCostTopLogo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/switch_cost_icon"
+        app:tint="@color/Black"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/switchCostResultTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/switchCostResultTv"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="Exemplary pattern before start"
+        android:textSize="20sp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/switchCostTopLogo"
+        app:layout_constraintBottom_toTopOf="@id/switchCostGameScreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </TextView>
+
+
+    <RelativeLayout
+        android:id="@+id/switchCostGameScreen"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toBottomOf="@id/switchCostResultTv"
+        app:layout_constraintBottom_toTopOf="@id/switchCostAnswers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/switchCostPatternArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="Game Square"
+            android:foregroundGravity="center"
+            android:src="@drawable/pattern_rectangle_r3">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/switchCostAnswers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/switchCostGameScreen"
+        app:layout_constraintBottom_toTopOf="@id/switchCostResultsBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+    <RelativeLayout
+        android:id="@+id/switchCostAnswerLeft"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/switchCostAnswerLeftImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="Answer Left"
+            android:src="@drawable/pattern_rectangle1">
+
+        </ImageView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/switchCostAnswerRight"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/switchCostAnswerRightImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="Answer Right"
+            android:src="@drawable/pattern_square1">
+
+        </ImageView>
+    </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/switchCostResultsBottom"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        app:layout_constraintTop_toBottomOf="@id/switchCostAnswers"
+        app:layout_constraintBottom_toTopOf="@id/switchCostNavLL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/switchCostResult2Tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintHorizontal_bias="0.0">
+
+        </TextView>
+        <TextView
+            android:id="@+id/switchCostResult3Tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintHorizontal_bias="0.0"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/switchCostNavLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/switchCostResultsBottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/switchCostBackBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="BACK"
+            android:minHeight="48dp"
+            android:src="@drawable/arrow_back_icon"
+            android:layout_marginEnd="20dp">
+        </ImageButton>
+        <Button
+            android:id="@+id/switchCostStartBtn"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:contentDescription="BACK"
+            android:minHeight="48dp"
+            android:text="START"
+            android:src="@drawable/arrow_back_icon"
+            android:layout_marginEnd="20dp"
+            android:textSize="20dp">
+        </Button>
+
+        <TextView
+            android:id="@+id/switchCostCurrentTry"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="/10"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black">
+        </TextView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

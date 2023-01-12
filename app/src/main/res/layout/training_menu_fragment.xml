@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.TrainingMenuFragment"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:background="@color/AntiqueWhite"
+    >
+
+    <LinearLayout
+        android:id="@+id/trainingMenuLL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/trainingMenuBackBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+    
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your training:"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="35dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="60dp"
+            android:textColor="@color/black"
+            >
+            
+        </TextView>
+        <LinearLayout
+            android:id="@+id/trainingMenuReactionLL"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:background="@drawable/custom_border"
+            android:layout_marginBottom="35dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:text="Reaction Time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="match_parent"
+                android:src="@drawable/reaction_time_icon"
+                android:contentDescription="Reaction Time"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                app:tint="@color/black" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/trainingMenuSwitchLL"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_border"
+            android:gravity="center"
+            android:layout_marginBottom="35dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:text="Switch Cost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+           />
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="match_parent"
+                android:src="@drawable/switch_cost_icon"
+                android:contentDescription="Switch Cost"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+               android:layout_alignParentRight="true"
+                app:tint="@color/black" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/trainingMenuDelayLL"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            android:gravity="center"
+
+            android:background="@drawable/custom_border"
+            android:layout_marginBottom="35dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="Delay Ability"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_alignParentLeft="true"/>
+            <ImageView
+                android:layout_width="38sp"
+                android:layout_height="match_parent"
+                android:src="@drawable/delay_ability_icon"
+                android:contentDescription="Delay Ability"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_alignParentRight="true"
+                app:tint="@color/black" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/trainingMenuBackBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="BACK"
+        android:minHeight="48dp"
+        android:src="@drawable/arrow_back_icon"
+        app:layout_constraintTop_toBottomOf= "@id/trainingMenuLL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/transparent">
+
+    </ImageButton>
+</androidx.constraintlayout.widget.ConstraintLayout>

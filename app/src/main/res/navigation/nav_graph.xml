@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/mainMenuFragment">
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.esportstryouts.Fragments.MainMenuFragment"
+        android:label="main_menu_fragment"
+        tools:layout="@layout/main_menu_fragment" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_trainingMenuFragment"
+            app:destination="@id/trainingMenuFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_howToPlayFragment"
+            app:destination="@id/howToPlayFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_leaderboardFragment"
+            app:destination="@id/leaderboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trainingMenuFragment"
+        android:name="com.example.esportstryouts.Fragments.TrainingMenuFragment"
+        android:label="training_menu_fragment"
+        tools:layout="@layout/training_menu_fragment" >
+        <action
+            android:id="@+id/action_trainingMenuFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+        <action
+            android:id="@+id/action_trainingMenuFragment_to_switchCostFragment2"
+            app:destination="@id/switchCostFragment" />
+        <action
+            android:id="@+id/action_trainingMenuFragment_to_delayAbilityFragment2"
+            app:destination="@id/delayAbilityFragment2" />
+        <action
+            android:id="@+id/action_trainingMenuFragment_to_reactionTimeFragment2"
+            app:destination="@id/reactionTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.example.esportstryouts.Fragments.ResultsFragment"
+        android:label="results_fragment"
+        tools:layout="@layout/results_fragment" >
+        <action
+            android:id="@+id/action_resultsFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/howToPlayFragment"
+        android:name="com.example.esportstryouts.Fragments.HowToPlayFragment"
+        android:label="howtoplay_fragment"
+        tools:layout="@layout/howtoplay_fragment" >
+        <action
+            android:id="@+id/action_howToPlayFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/leaderboardFragment"
+        android:name="com.example.esportstryouts.Fragments.LeaderboardFragment"
+        android:label="leaderboard_fragment"
+        tools:layout="@layout/leaderboard_fragment" >
+        <action
+            android:id="@+id/action_leaderboardFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/switchCostFragment"
+        android:name="com.example.esportstryouts.Fragments.SwitchCostFragment"
+        android:label="switch_cost_fragment"
+        tools:layout="@layout/switch_cost_activity" >
+        <action
+            android:id="@+id/action_switchCostFragment2_to_trainingMenuFragment"
+            app:destination="@id/trainingMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/delayAbilityFragment2"
+        android:name="com.example.esportstryouts.Fragments.DelayAbilityFragment"
+        android:label="delay_ability_fragment"
+        tools:layout="@layout/delay_ability_activity" >
+        <action
+            android:id="@+id/action_delayAbilityFragment2_to_trainingMenuFragment"
+            app:destination="@id/trainingMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reactionTimeFragment"
+        android:name="com.example.esportstryouts.Fragments.ReactionTimeFragment"
+        android:label="reaction_time_fragment"
+        tools:layout="@layout/reaction_time_activity" >
+        <action
+            android:id="@+id/action_reactionTimeFragment2_to_trainingMenuFragment"
+            app:destination="@id/trainingMenuFragment" />
+    </fragment>
+</navigation>

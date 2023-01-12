@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerValues">
+        <item>Game</item>
+        <item>Date</item>
+        <item>Best score</item>
+    </string-array>
+    <string-array name="leaderboardSpinnerValues">
+        <item>Name</item>
+        <item>Best score RT</item>
+        <item>Best score SC</item>
+        <item>Best score DA</item>
+    </string-array>
+</resources>

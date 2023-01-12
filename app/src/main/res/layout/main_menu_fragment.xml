@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.MainMenuFragment"
+    >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="70dp">
+
+    <LinearLayout
+        android:id="@+id/menuTrainingLL"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="match_parent"
+            android:src="@drawable/training_icon"
+            android:contentDescription="Training"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            app:tint="@color/black" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:text="Training"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuResultsLL"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="match_parent"
+                android:src="@drawable/results_icon"
+                android:contentDescription="YourResults"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="10dp"
+                app:tint="@color/black" />
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:text="Your results"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/menuHowToPlayLL"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="match_parent"
+                android:src="@drawable/howtoplay_icon"
+                android:contentDescription="HowToPlay"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="10dp"
+                app:tint="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="How To Play"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/menuLeaderboardLL"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="match_parent"
+                android:src="@drawable/leaderboard_icon"
+                android:contentDescription="Training"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="10dp"
+                app:tint="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="Leaderboard"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

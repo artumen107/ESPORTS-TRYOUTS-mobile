@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:background="@drawable/custom_border_leaderboard"
+    android:layout_marginBottom="5dp">
+
+
+    <ImageView
+        android:id="@+id/resultGameIv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:src="@drawable/delay_ability_icon"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        app:tint="@color/Black" />
+    <TextView
+        android:id="@+id/resultDateTv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:textSize="20sp"
+        android:text="FULL DATE"
+        android:minWidth="40dp"
+        android:minHeight="40dp"/>
+    <TextView
+        android:id="@+id/resultBestTv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:textSize="20sp"
+        android:text="275 ms"/>
+
+
+</LinearLayout>

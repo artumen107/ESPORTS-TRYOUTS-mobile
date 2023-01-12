@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="DelayAbilityActivity">
+
+
+    <ImageView
+        android:id="@+id/delayAbilityTopLogo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/delay_ability_icon"
+        app:tint="@color/Black"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/delayAbilityGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/delayAbilityGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/delayAbilityTopLogo"
+        app:layout_constraintBottom_toTopOf="@id/delayAbilityResultTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neutral "
+                android:layout_gravity="center"
+                android:textSize="18dp">
+
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/Green"
+                android:minWidth="24dp"
+                android:minHeight="24dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="2dp">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trap "
+                android:layout_gravity="center"
+                android:textSize="18dp">
+
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/Orange"
+                android:minWidth="24dp"
+                android:minHeight="24dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="2dp">
+            </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trap 2 "
+                    android:layout_gravity="center"
+                    android:textSize="18dp">
+
+                </TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/MediumVioletRed"
+                    android:minWidth="24dp"
+                    android:minHeight="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp">
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click "
+                android:layout_gravity="center"
+                android:textSize="18dp">
+                #C71585
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/Red"
+                android:minWidth="24dp"
+                android:minHeight="24dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="2dp">
+            </ImageView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/delayAbilityResultTv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/delayAbilityGuideline"
+        app:layout_constraintBottom_toTopOf="@id/delayAbilityGameScreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </TextView>
+    <RelativeLayout
+        android:id="@+id/delayAbilityGameScreen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/delayAbilityResultTv"
+        app:layout_constraintBottom_toTopOf="@id/delayAbilityResult2Tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/delayAbilityTouchArea"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:background="@color/Green"
+            android:contentDescription="Game Square">
+
+        </ImageView>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/delayAbilityResult2Tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/delayAbilityResult3Tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/delayAbilityGameScreen">
+
+    </TextView>
+    <TextView
+        android:id="@+id/delayAbilityResult3Tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/delayAbilityNavLL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/delayAbilityResult2Tv">
+
+    </TextView>
+    <LinearLayout
+        android:id="@+id/delayAbilityNavLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/delayAbilityResult3Tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/delayAbilityBackBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="BACK"
+            android:minHeight="48dp"
+            android:src="@drawable/arrow_back_icon"
+            android:layout_marginEnd="20dp">
+        </ImageButton>
+        <Button
+            android:id="@+id/delayAbilityStartBtn"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:contentDescription="BACK"
+            android:minHeight="48dp"
+            android:text="START"
+            android:src="@drawable/arrow_back_icon"
+            android:layout_marginEnd="20dp"
+            android:textSize="20dp">
+        </Button>
+
+        <TextView
+            android:id="@+id/delayAbilityCurrentTry"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="/5"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black">
+        </TextView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
